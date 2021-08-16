@@ -111,6 +111,18 @@ https://www.youtube.com/watch?v=xNtT8NGinxU
 
 https://www.w3schools.com/css/css_grid.asp
 
+https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+
+https://www.w3schools.com/jsref/dom_obj_checkbox.asp
+
+https://javascript.info/event-delegation
+
+https://www.w3schools.com/cssref/pr_text_text-decoration.asp
+
+https://www.w3schools.com/jsref/prop_element_childelementcount.asp
+
+https://www.w3schools.com/jsref/jsref_replace.asp
+
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author

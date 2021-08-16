@@ -83,14 +83,22 @@ h1 {
   outline: none;
   color: #cacde8;
   font-weight: 400;
+  width: 100%;
+  display: inline-block;
 }
 
 .tasks__container {
+  width: 100%;
   border-radius: 5px;
   background: #393a4c;
 }
 
-.task {
+.all_tasks {
+  width: 100%;
+}
+
+.singular-task {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,7 +114,7 @@ h1 {
   border-bottom: 1px solid #777a92;
 }
 
-.task:last-child {
+.singular-task:last-child {
   border-bottom: none;
 }
 
@@ -116,16 +124,20 @@ h1 {
 
 .task__details .task__content {
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   color: #cacde8;
-  font-weight: 300;
+  font-weight: 400;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 
-.task__details .delete--task {
+.delete--task {
   display: inline-block;
+  cursor: pointer;
 }
 
 .checkbox {
+  width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -187,7 +199,6 @@ h1 {
   -ms-grid-column-span: 1;
   grid-column: 1 / span 1;
   font-size: 0.68rem;
-  cursor: pointer;
   text-align: start;
 }
 
@@ -202,7 +213,7 @@ h1 {
   text-align: end;
 }
 
-.other__controls {
+.filter--tasks {
   margin-top: 1rem;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -229,5 +240,9 @@ h1 {
   color: #cacde8;
   font-size: 0.78rem;
   font-weight: 300;
+}
+
+.strike-through {
+  text-decoration: line-through;
 }
 /*# sourceMappingURL=main.css.map */
