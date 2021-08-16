@@ -1,0 +1,179 @@
+@import './config';
+@import './responsive';
+
+body {
+    background-color: $veryDarkBlue;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.top__background {
+    height: 50vh;
+    background: url(../images/bg-mobile-dark.jpg) no-repeat center top;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -10rem;
+}
+
+header {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.add__task {
+    margin: 1rem 0;
+}
+
+.input__task__container {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    border: none;
+    outline: none;
+    background: $veryDarkGrayishBlue2;
+
+    .check--task {
+        width: 5%;
+        vertical-align: middle;
+    }
+    
+    .input--task {
+        font-size: 0.78rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: $lightGrayishBlue;
+        font-weight: 400;
+    }
+}
+
+.tasks__container {
+    border-radius: 5px;
+    background: $veryDarkGrayishBlue2;
+}
+
+
+.task {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    justify-content: space-between;
+    border-bottom: 1px solid $darkGrayishBlue;
+}
+
+.task:last-child {
+    border-bottom: none;
+}
+
+.task__details {
+    
+    .complete--task {
+        display: inline-block;
+    }
+
+    .task__content {
+        display: inline-block;
+        font-size: 0.78rem;
+        color: $lightGrayishBlue;
+        font-weight: 300;
+    }
+
+    .delete--task {
+        display: inline-block;
+    }
+
+}
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    .checkbox__input {
+        display: none;
+    }
+
+    .checkbox__box {
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border: 1px solid $darkGrayishBlue;
+    }
+}
+
+.checkbox__input:checked + .checkbox__box{
+    background-image: $primaryCheckBackground;
+}
+
+.tasks__control {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    font-weight: 300;
+    color: $lightGrayishBlue;
+    margin: 1rem 0;
+    border-radius: 5px;
+    background: $veryDarkGrayishBlue2;
+}
+
+.items__left {
+    grid-row: 1;
+    grid-column: 1 / span 1;
+    font-size: 0.68rem;
+    cursor: pointer;
+    text-align: start;
+}
+
+.tasks--clear--completed {
+    grid-row: 1;
+    grid-column: 2 / span 1;
+    font-size: 0.68rem;
+    cursor: pointer;
+    text-align: end;
+}
+
+.other__controls {
+    margin-top: 1rem;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.68rem;
+}
+
+.tasks--All, .tasks--Active, .tasks--completed {
+    cursor: pointer;
+}
+
+.reorder__info {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    color: $lightGrayishBlue;
+    font-size: 0.78rem;
+    font-weight: 300;    
+}

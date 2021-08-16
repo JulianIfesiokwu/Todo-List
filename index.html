@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./stylesheets/main.css">  
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="top__background"></div>
+    <main class="main">
+    <header class="header">
+      <h1 class="header__title"> Todo</h1>
+      <span><img src="./images/icon-sun.svg" alt="" class="header--theme"></span>
+    </header>
+
+    <div class="add__task">
+      <div class="input__task__container">
+        <label class="checkbox" id="task__checkbox">
+          <div class="checkbox__box">
+          </div>
+          <input type="text" class="input--task" placeholder="Create a new todo...">
+        </label>
+      </div>
+    </div>
+
+    <div class="all__tasks">
+
+      <div class="tasks__container">
+        <div class="task">
+          <div class="task__details">
+            <label class="checkbox" id="task__checkbox">
+              <input type="checkbox" class="checkbox__input" id="task__checkbox">
+              <div class="checkbox__box">
+              </div>
+              <p class="task__content">Jog around the park 3x</p>
+            </label>
+          </div>
+          <div class="delete--task">
+            <span><img src="./images/icon-cross.svg" alt=""></span>
+          </div>
+        </div>
+        <div class="task">
+          <div class="task__details">
+            <label class="checkbox" id="task__checkbox">
+              <input type="checkbox" class="checkbox__input" id="task__checkbox">
+              <div class="checkbox__box">
+                <!-- <img src="./images/icon-check.svg" alt=""> also add background with js -->
+              </div>
+              <p class="task__content">Jog around the park 3x</p>
+            </label>
+          </div>
+          <div class="delete--task">
+            <span><img src="./images/icon-cross.svg" alt=""></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tasks__control">
+        <p class="items__left"><span class="number__left">5</span> items left</p>
+        <div class="other__controls">
+          <p class="tasks--All">All</p>
+          <p class="tasks--Active">Active</p>
+          <p class="tasks--completed">Completed</p>
+        </div>
+        <p class="tasks--clear--completed">Clear Completed</p>
+      </div>
+
+    </div>
+      <p class="reorder__info">Drag and drop to reorder list</p>
+    </main>
+  </div>
+
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

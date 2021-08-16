@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .container .top__background {
+    background: url(../images/bg-desktop-dark.jpg);
+  }
+  .container main {
+    width: 40%;
+  }
+}
+
+body {
+  background-color: #161722;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.top__background {
+  height: 50vh;
+  background: url(../images/bg-mobile-dark.jpg) no-repeat center top;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -10rem;
+}
+
+header {
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.add__task {
+  margin: 1rem 0;
+}
+
+.input__task__container {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  border: none;
+  outline: none;
+  background: #393a4c;
+}
+
+.input__task__container .check--task {
+  width: 5%;
+  vertical-align: middle;
+}
+
+.input__task__container .input--task {
+  font-size: 0.78rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #cacde8;
+  font-weight: 400;
+}
+
+.tasks__container {
+  border-radius: 5px;
+  background: #393a4c;
+}
+
+.task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #777a92;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task__details .complete--task {
+  display: inline-block;
+}
+
+.task__details .task__content {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: #cacde8;
+  font-weight: 300;
+}
+
+.task__details .delete--task {
+  display: inline-block;
+}
+
+.checkbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.checkbox .checkbox__input {
+  display: none;
+}
+
+.checkbox .checkbox__box {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: 1px solid #777a92;
+}
+
+.checkbox__input:checked + .checkbox__box {
+  background-image: -webkit-gradient(linear, left top, right top, from(#57ddff), to(#c058f3));
+  background-image: linear-gradient(90deg, #57ddff, #c058f3);
+}
+
+.tasks__control {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  font-weight: 300;
+  color: #cacde8;
+  margin: 1rem 0;
+  border-radius: 5px;
+  background: #393a4c;
+}
+
+.items__left {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  font-size: 0.68rem;
+  cursor: pointer;
+  text-align: start;
+}
+
+.tasks--clear--completed {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  font-size: 0.68rem;
+  cursor: pointer;
+  text-align: end;
+}
+
+.other__controls {
+  margin-top: 1rem;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 0.68rem;
+}
+
+.tasks--All, .tasks--Active, .tasks--completed {
+  cursor: pointer;
+}
+
+.reorder__info {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  color: #cacde8;
+  font-size: 0.78rem;
+  font-weight: 300;
+}
+/*# sourceMappingURL=main.css.map */

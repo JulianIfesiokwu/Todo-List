@@ -1,0 +1,9 @@
+@include media-md {
+    .container .top__background {
+        background: url(../images/bg-desktop-dark.jpg);
+    }
+
+    .container main {
+        width: 40%;
+    }
+}
